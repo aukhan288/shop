@@ -4,7 +4,7 @@ import { LOGO, COLOR_CODE } from "../constants/AppConstant"
 import CheckBox from '@react-native-community/checkbox';
 import styles from "../assets/css/RegisterCss";
 
-const RegisterScreen = () => {
+const RegisterScreen = (props) => {
     const { height, width } = Dimensions.get('screen');
     const [remember, setRemember] = useState(true);
     return (
@@ -35,9 +35,9 @@ const RegisterScreen = () => {
             
             <Pressable
                 style={styles.registerView}
-                onPress={() => console.log('login')}
+                onPress={() => props.navigation.navigate("LoginScreen")}
             >
-                <Text style={styles.registerText}>Don't have account Register here!</Text>
+                <Text style={styles.registerText}>Already have account Login here!</Text>
             </Pressable>
 
         </View>

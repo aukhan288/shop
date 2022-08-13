@@ -23,7 +23,7 @@ const LoginScreen = (props) => {
             />
             <Pressable
                 style={styles.loginBtn}
-                onPress={() => console.log('login')}
+                onPress={() => {console.log('login'),props.navigation.navigate("BottomNavigater")}}
             >
                 <Text style={styles.loginBtnText}>Login</Text>
             </Pressable>
@@ -46,7 +46,7 @@ const LoginScreen = (props) => {
             </View>
             <Pressable
                 style={styles.registerView}
-                onPress={()=> navigation.navigate("LoginScreen")}//navigation.navigate('LoginScreen')
+                onPress={()=> {console.log('&&&&&&&&&&'),props.navigation.navigate("RegisterScreen")}}//navigation.navigate('LoginScreen')
             >
                 <Text style={styles.registerText}>Don't have account Register here!</Text>
             </Pressable>
