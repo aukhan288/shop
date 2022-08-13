@@ -8,20 +8,20 @@ import BottomNavigater from '../navigation/BottomNavigater';
 
 const Stack = createNativeStackNavigator();
 
-const AppNavigater =(props)=>{
+function AppNavigater(){
     return(
         <NavigationContainer>
        <Stack.Navigator>
-        {/* <Stack.Screen
+         <Stack.Screen
           name="LoginScreen"
           component={LoginScreen}
           options={{ title: 'Welcome',headerShown:false }}
-        />    */}
-        {/* <Stack.Screen
+        />    
+       <Stack.Screen
           name="RegisterScreen"
           component={RegisterScreen}
           options={{ title: 'Welcome',headerShown:false }}
-        />  */}
+        />  
          <Stack.Screen
           name="BottomNavigater"
           component={BottomNavigater}

@@ -16,7 +16,7 @@ import AppNavigater from './src/navigation/AppNavigater'
 
 
 const App = (props) => {
-  
+  console.log('11111',props)
   const [splashTimer,setSplashTimer]=useState(true)
   const timer=()=>{
     setTimeout(
